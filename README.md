@@ -10,7 +10,7 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/57b8aeb4090d4d0039befe67/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57b8aeb4090d4d0039befe67)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Iurii-Dziuban/kotlin-examples/issues)
 
-A project that shows Kotlin language features that differ from java (http://projects.spring.io/spring-batch/)
+A project that shows Kotlin language features that differ from java (https://kotlinlang.org/)
 
 # Project structure
 Each sub project follows the structure
