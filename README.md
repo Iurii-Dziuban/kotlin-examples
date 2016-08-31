@@ -1,13 +1,13 @@
 # kotlin-examples
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)    
 
-[![Build Status](https://travis-ci.org/Iurii-Dziuban/spring-batch-sandbox.svg?branch=master)](https://travis-ci.org/Iurii-Dziuban/kotlin-examples)
+[![Build Status](https://travis-ci.org/Iurii-Dziuban/kotlin-examples.svg?branch=master)](https://travis-ci.org/Iurii-Dziuban/kotlin-examples)
 [![Coverage Status](https://coveralls.io/repos/github/Iurii-Dziuban/spring-batch-sandbox/badge.svg?branch=master)](https://coveralls.io/github/Iurii-Dziuban/kotlin-examples?branch=master)
 <a href="https://scan.coverity.com/projects/iurii-dziuban-kotlin-examples">
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/9961/badge.svg"/>
 </a>
-[![Dependency Status](https://www.versioneye.com/user/projects/57b8aeb4090d4d0039befe67/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57b8aeb4090d4d0039befe67)
+[![Dependency Status](https://www.versioneye.com/user/projects/57c6958b69d9490042f72f1b/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57c6958b69d9490042f72f1b)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Iurii-Dziuban/kotlin-examples/issues)
 
 A project that shows Kotlin language features that differ from java (https://kotlinlang.org/)
