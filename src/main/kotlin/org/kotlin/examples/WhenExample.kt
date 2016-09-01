@@ -6,10 +6,12 @@ package org.kotlin.examples
  */
 class WhenExample {
     fun whenExample(x : Int) : String {
-        when(x) {
-            0 -> return "ZERO"
-            1 -> return "ONE"
-            else -> return "NotBinary"
+        return when(x) {
+            0 -> "ZERO"
+            1 -> "ONE"
+            // cast notation could be used in when statement
+            // is Int -> "Int"
+            else -> "NotBinary"
         }
     }
 }
