@@ -49,3 +49,5 @@ Standard output is used
 - `Delegation` example of Delegation pattern alternative to Inheritance
 - `SealedExample` feature of closing functionality inside sealed class. Not possible to extend class hierarchy from outside
 - `variance` examples of Producer/Consumer pattern to make safe casts and assignments
+- `SpringExampleTest` integration with spring framework
+- `ObservableTest` observable feature example (kind of value changed listener)
