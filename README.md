@@ -47,3 +47,4 @@ Standard output is used
 - `variance` examples of Producer/Consumer pattern to make safe casts and assignments
 - `SpringExampleTest` integration with spring framework
 - `ObservableTest` observable feature example (kind of value changed listener)
+- `Mapping` mapping from Map to class fields example
