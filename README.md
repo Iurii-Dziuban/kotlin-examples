@@ -45,3 +45,5 @@ Standard output is used
  * Infix function
  * Null check do
  * Closure
+- `VarArgExample` shows vararg parameters example
+- `Delegation` example of Delegation pattern alternative to Inheritance
