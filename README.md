@@ -3,10 +3,6 @@
 
 [![Build Status](https://travis-ci.org/Iurii-Dziuban/kotlin-examples.svg?branch=master)](https://travis-ci.org/Iurii-Dziuban/kotlin-examples)
 [![Coverage Status](https://coveralls.io/repos/github/Iurii-Dziuban/spring-batch-sandbox/badge.svg?branch=master)](https://coveralls.io/github/Iurii-Dziuban/kotlin-examples?branch=master)
-<a href="https://scan.coverity.com/projects/iurii-dziuban-kotlin-examples">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/10046/badge.svg"/>
-</a>
 [![Dependency Status](https://www.versioneye.com/user/projects/57c6958b69d9490042f72f1b/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57c6958b69d9490042f72f1b)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Iurii-Dziuban/kotlin-examples/issues)
 
