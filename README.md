@@ -48,3 +48,4 @@ Standard output is used
 - `VarArgExample` shows vararg parameters example
 - `Delegation` example of Delegation pattern alternative to Inheritance
 - `SealedExample` feature of closing functionality inside sealed class. Not possible to extend class hierarchy from outside
+- `variance` examples of Producer/Consumer pattern to make safe casts and assignments
