@@ -28,6 +28,8 @@ class DollarTest {
         assertEquals(Dollar(25), Dollar(5) + Dollar(20))
         assertEquals(Dollar(25), Dollar(20) + 5)
         assertEquals(Dollar(0), !Dollar(20))
+        assertEquals(Dollar(20), +Dollar(20))
+        assertEquals(Dollar(-20), -Dollar(20))
 
         // String interpolation and val to var feature
         var decrementedDollar = Dollar(20);
@@ -35,6 +37,12 @@ class DollarTest {
         // not working for default val value immediately
         decrementedDollar--
         assertEquals(Dollar(19), decrementedDollar)
+
+        var incrementedDollar = Dollar(20);
+        println("Incremented Dollar $incrementedDollar")
+        // not working for default val value immediately
+        incrementedDollar++
+        assertEquals(Dollar(21), incrementedDollar)
 
         // Copy value with default (optional) value example
         assertEquals(Dollar(100), Dollar(20).copy())
@@ -49,6 +57,8 @@ class DollarTest {
         assertFalse(Dollar(10).equals(1))
         assertTrue(Dollar(10) == Dollar(10))
         assertFalse(Dollar(10) === Dollar(10))
+
+        assertEquals(10, Dollar(10).hashCode())
 
         // Destructuring object
         val (fiftyCents) = Dollar(50)

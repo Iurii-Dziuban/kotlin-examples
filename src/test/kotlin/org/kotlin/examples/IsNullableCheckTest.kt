@@ -15,5 +15,8 @@ class IsNullableCheckTest {
         }
         assertEquals("bar", nullableFunctions[0].name);
         assertEquals("foo", nonNullableFunctions[0].name);
+
+        assertEquals(null, NullableNonNullableReturnTypeExample().bar());
+        assertEquals("foo", NullableNonNullableReturnTypeExample().foo());
     }
 }
