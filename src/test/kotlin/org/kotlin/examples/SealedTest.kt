@@ -11,5 +11,6 @@ class SealedTest {
     @Test
     fun test() {
         assertEquals(4.0, Expr.eval(Expr.Sum(Expr.Const(1.0), Expr.Const(3.0))))
+        assertEquals(Double.NaN, Expr.eval(Expr.Sum(Expr.Const(1.0), Expr.NotANumber)))
     }
 }

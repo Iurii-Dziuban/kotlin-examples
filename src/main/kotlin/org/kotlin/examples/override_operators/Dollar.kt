@@ -55,7 +55,8 @@ open class Dollar(var cents: Int = 0) {
     }
 
     // inline - one function will be used in runtime no High order functions
-    inline fun lock(lock: Lock, body: () -> Unit) {
+    //FIXME inline functions are not shown in the coverage
+    /*inline*/ fun lock(lock: Lock, body: () -> Unit) {
         lock.lock()
         try {
             val dollar =  (body())
