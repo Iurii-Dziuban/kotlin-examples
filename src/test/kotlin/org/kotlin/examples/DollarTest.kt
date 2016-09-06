@@ -2,6 +2,7 @@ package org.kotlin.examples
 
 import org.junit.Test
 import org.kotlin.examples.override_operators.Dollar
+import org.slf4j.LoggerFactory
 import java.util.concurrent.locks.ReentrantLock
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
@@ -22,6 +23,9 @@ import kotlin.test.assertTrue
  * Closure
  */
 class DollarTest {
+
+    private val LOGGER = LoggerFactory.getLogger(DollarTest::class.java)
+
     @Test
     fun plusAndEqualsHashcodeOverrideTest() {
         //Operator overloading
@@ -33,13 +37,13 @@ class DollarTest {
 
         // String interpolation and val to var feature
         var decrementedDollar = Dollar(20);
-        println("Decremented Dollar $decrementedDollar")
+        LOGGER.info("Decremented Dollar $decrementedDollar")
         // not working for default val value immediately
         decrementedDollar--
         assertEquals(Dollar(19), decrementedDollar)
 
         var incrementedDollar = Dollar(20);
-        println("Incremented Dollar $incrementedDollar")
+        LOGGER.info("Incremented Dollar $incrementedDollar")
         // not working for default val value immediately
         incrementedDollar++
         assertEquals(Dollar(21), incrementedDollar)
@@ -79,9 +83,9 @@ class DollarTest {
         // null check do
         val dollar = Dollar(50);
         dollar?.let {
-            println("Dollar is not null and " + dollar.cents)
+            LOGGER.info("Dollar is not null and " + dollar.cents)
             // not working for properties...
-            println("Dollar is not null and $dollar.cents")
+            LOGGER.info("Dollar is not null and $dollar.cents")
         }
 
         // closure

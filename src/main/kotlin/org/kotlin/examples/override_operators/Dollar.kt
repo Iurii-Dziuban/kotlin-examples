@@ -1,5 +1,6 @@
 package org.kotlin.examples.override_operators
 
+import org.slf4j.LoggerFactory
 import java.util.concurrent.locks.Lock
 
 /**
@@ -8,8 +9,11 @@ import java.util.concurrent.locks.Lock
  */
 open class Dollar(var cents: Int = 0) {
 
+    private val LOGGER = LoggerFactory.getLogger(Dollar::class.java)
+
     val oneDollar: Dollar by lazy {
-        println(Dollar(100))
+        // why explicitly call toString ?
+        LOGGER.info(Dollar(100).toString())
         Dollar(100)
     }
 
@@ -60,7 +64,7 @@ open class Dollar(var cents: Int = 0) {
         lock.lock()
         try {
             val dollar =  (body())
-            println(dollar)
+            LOGGER.info(dollar.toString())
         }
         finally {
             lock.unlock()
