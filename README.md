@@ -37,7 +37,7 @@ Standard output is used
  * Copy value
  * Referential and structural equals
  * Destructuring object
- * Inlining by locking example
+ * Inlining by locking example // coverage tool does not cover inline functions
  * Infix function
  * Null check do
  * Closure
