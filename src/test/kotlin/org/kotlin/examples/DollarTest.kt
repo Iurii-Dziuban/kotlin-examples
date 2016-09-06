@@ -65,7 +65,7 @@ class DollarTest {
         assertEquals(50, fiftyCents)
 
         // Inlining by locking example
-        assertEquals(Dollar(20), Dollar(10).lock(ReentrantLock(), { Dollar(20)}));
+        Dollar(10).lock(ReentrantLock(), { });
 
         //Infix function
         assertEquals(Dollar(20), Dollar(10) multiply 2)

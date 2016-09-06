@@ -55,12 +55,11 @@ open class Dollar(var cents: Int = 0) {
     }
 
     // inline - one function will be used in runtime no High order functions
-    inline fun lock(lock: Lock, body: () -> Dollar) : Dollar {
+    inline fun lock(lock: Lock, body: () -> Unit) {
         lock.lock()
         try {
             val dollar =  (body())
             println(dollar)
-            return dollar;
         }
         finally {
             lock.unlock()
