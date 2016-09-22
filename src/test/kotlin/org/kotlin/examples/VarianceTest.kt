@@ -3,7 +3,6 @@ package org.kotlin.examples
 import org.junit.Test
 import org.kotlin.examples.variance.*
 import kotlin.test.assertEquals
-import kotlin.test.assertFalse
 
 /**
  * Created by iurii.dziuban on 02.09.2016.
@@ -23,8 +22,6 @@ class VarianceTest {
         // not possible
         //val producerCat : ElementProducer<Cat> = AnimalIterator(listOf(cat, dog));
 
-        val animalComparator = AnimalComparator(cat)
-
         // possible
         val consumerCat : ElementConsumer<Cat> = AnimalComparator(cat)
         // not possible
@@ -32,7 +29,7 @@ class VarianceTest {
 
         assertEquals("bark", dog.talk())
         assertEquals("meow", cat.talk())
-        assertEquals("Rrrrrrrr", Animal(1).talk())
+        assertEquals("Rrrrrrrr", Animal().talk())
 
         assertEquals(AnimalComparator(dog).consume(cat), 1)
         assertEquals(AnimalComparator(cat).consume(dog), -1)

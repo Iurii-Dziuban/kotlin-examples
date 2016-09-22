@@ -1,7 +1,6 @@
 package org.kotlin.examples
 
 import org.junit.Test
-import org.kotlin.examples.override_operators.Dollar
 import kotlin.test.assertEquals
 
 /**
