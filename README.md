@@ -30,6 +30,7 @@ Standard output is used
 - `NullableNonNullableReturnTypeExample` example that shows nullable and notNullable types with `?` in the end
 - `WhenExample` potentially more powerful instrument than java switch statement
 - `Transaction` kotlin data POJO example. `data` notation generates equals and hashcode, costructor generation, `val` - readonly properties,  so only getters will be generated
+   destructing and equality declaration example
 - `Dollar` shows operator overrides.
  *  Operator overloading
  * Equals and hashcode override_operators
