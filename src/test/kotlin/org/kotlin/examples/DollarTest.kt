@@ -37,7 +37,7 @@ class DollarTest {
     }
 
     @Test
-    fun decrement() {
+    fun decrementAndStringTemplate() {
         // String interpolation and val to var feature
         var decrementedDollar = Dollar(20);
         LOGGER.info("Decremented Dollar $decrementedDollar")
@@ -47,7 +47,7 @@ class DollarTest {
     }
 
     @Test
-    fun increment() {
+    fun incrementAndStringTemplate() {
         var incrementedDollar = Dollar(20);
         LOGGER.info("Incremented Dollar $incrementedDollar")
         // not working for default val value immediately
@@ -102,7 +102,7 @@ class DollarTest {
     }
 
     @Test
-    fun nullCheck() {
+    fun nullCheckAndStringTemplate() {
         val dollar = Dollar(50);
         dollar?.let {
             LOGGER.info("Dollar is not null and " + dollar.cents)

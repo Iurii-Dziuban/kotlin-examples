@@ -27,6 +27,7 @@ Standard output is used
 # Kotlin features
 - `TopLevelFunction` function as first class citizen
 - `ExtSimpleService` example of adding functionality (method) into existing class (problems can occur with separate compilation)
+- `FactorialTailRec` tail recursion example
 - `NullableNonNullableReturnTypeExample` example that shows nullable and notNullable types with `?` in the end
 - `WhenExample` potentially more powerful instrument than java switch statement
 - `Transaction` kotlin data POJO example. `data` notation generates equals and hashcode, costructor generation, `val` - readonly properties,  so only getters will be generated
@@ -43,9 +44,11 @@ Standard output is used
  * Null check do
  * Closure
  * Dollar Range implementation
+- `DollarProgression` progression implementation with internal visibility modifier to be visible inside module
 - `VarArgExample` shows vararg parameters example
 - `Delegation` example of Delegation pattern alternative to Inheritance
-- `SealedExample` feature of closing functionality inside sealed class. Not possible to extend class hierarchy from outside
+- `SealedExample` feature of closing functionality inside sealed class.
+   Not possible to extend class hierarchy from outside. Plus companion object example, cause there is no static members
 - `variance` examples of Producer/Consumer pattern to make safe casts and assignments
 - `SpringExampleTest` integration with spring framework
 - `ObservableTest` observable feature example (kind of value changed listener)
