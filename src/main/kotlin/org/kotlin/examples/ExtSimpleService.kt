@@ -5,12 +5,12 @@ package org.kotlin.examples
  *
  * Adding additional method to the service
  */
-class SimpleService {
+class ExtSimpleService {
     fun serve() : String{
         return "Serve"
     }
 }
 
-fun SimpleService.extServe() : String {
+fun ExtSimpleService.extServe() : String {
     return "ExtServe"
 }

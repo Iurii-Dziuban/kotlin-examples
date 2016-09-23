@@ -9,7 +9,7 @@ import kotlin.test.assertEquals
 class ExtServiceTest {
     @Test
     fun extServiceCall() {
-        assertEquals("Serve", SimpleService().serve())
-        assertEquals("ExtServe", SimpleService().extServe())
+        assertEquals("Serve", ExtSimpleService().serve())
+        assertEquals("ExtServe", ExtSimpleService().extServe())
     }
 }
