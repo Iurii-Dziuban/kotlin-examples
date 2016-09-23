@@ -3,10 +3,10 @@ package org.kotlin.examples
 import org.junit.Test
 import org.kotlin.examples.override_operators.Dollar
 import org.slf4j.LoggerFactory
-import java.util.concurrent.locks.ReentrantLock
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import kotlin.test.fail
 
 /**
  * Created by iurii.dziuban on 01.09.2016.
@@ -85,7 +85,7 @@ class DollarTest {
 
     @Test
     fun inliningFunction() {
-        Dollar(10).lock(ReentrantLock(), { });
+        assertEquals(Dollar().applyRate(Dollar(3), { d ->  d + d }), Dollar(6))
     }
 
     @Test
@@ -96,9 +96,9 @@ class DollarTest {
     @Test
     fun lazyProperty() {
         val dollarProperty = Dollar(10)
+        dollarProperty.oneDollar
+        dollarProperty.oneDollar
         assertEquals(Dollar(100), dollarProperty.oneDollar)
-        dollarProperty.oneDollar
-        dollarProperty.oneDollar
     }
 
     @Test
@@ -108,7 +108,10 @@ class DollarTest {
             LOGGER.info("Dollar is not null and " + dollar.cents)
             // not working for properties...
             LOGGER.info("Dollar is not null and $dollar.cents")
+            assertEquals(Dollar(50), dollar)
+            return
         }
+        fail("dollar should not be null")
     }
 
     @Test

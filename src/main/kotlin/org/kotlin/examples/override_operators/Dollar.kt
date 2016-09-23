@@ -1,7 +1,6 @@
 package org.kotlin.examples.override_operators
 
 import org.slf4j.LoggerFactory
-import java.util.concurrent.locks.Lock
 
 /**
  *
@@ -59,15 +58,10 @@ open class Dollar(var cents: Int = 0) : Comparable<Dollar> {
 
     // inline - one function will be used in runtime no High order functions
     //FIXME inline functions are not shown in the coverage
-    /*inline*/ fun lock(lock: Lock, body: () -> Unit) {
-        lock.lock()
-        try {
-            val dollar =  (body())
-            LOGGER.info(dollar.toString())
-        }
-        finally {
-            lock.unlock()
-        }
+    /*inline*/ fun applyRate(dollar: Dollar, body: (Dollar) -> Dollar) : Dollar {
+        val value =  (body(dollar))
+        LOGGER.info(dollar.toString())
+        return value
     }
 
     override fun compareTo(other: Dollar): Int {
