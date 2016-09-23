@@ -2,6 +2,9 @@ package org.kotlin.examples
 
 import org.junit.Test
 import org.kotlin.examples.variance.*
+import org.kotlin.examples.variance.animal.Animal
+import org.kotlin.examples.variance.animal.Cat
+import org.kotlin.examples.variance.animal.Dog
 import kotlin.test.assertEquals
 
 /**

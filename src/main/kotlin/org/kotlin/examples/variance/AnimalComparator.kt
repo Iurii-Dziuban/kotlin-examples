@@ -1,5 +1,7 @@
 package org.kotlin.examples.variance
 
+import org.kotlin.examples.variance.animal.Animal
+
 /**
  * Created by iurii.dziuban on 02.09.2016.
  */
