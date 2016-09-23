@@ -32,7 +32,7 @@ Standard output is used
 - `Transaction` kotlin data POJO example. `data` notation generates equals and hashcode, costructor generation, `val` - readonly properties,  so only getters will be generated
    destructing and equality declaration example
 - `Dollar` shows operator overrides.
- *  Operator overloading
+ * Operator overloading
  * Equals and hashcode override_operators
  * Try/catch expression values
  * Copy value
@@ -42,6 +42,7 @@ Standard output is used
  * Infix function
  * Null check do
  * Closure
+ * Dollar Range implementation
 - `VarArgExample` shows vararg parameters example
 - `Delegation` example of Delegation pattern alternative to Inheritance
 - `SealedExample` feature of closing functionality inside sealed class. Not possible to extend class hierarchy from outside

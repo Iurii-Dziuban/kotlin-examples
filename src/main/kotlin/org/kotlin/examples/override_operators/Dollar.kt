@@ -4,16 +4,15 @@ import org.slf4j.LoggerFactory
 import java.util.concurrent.locks.Lock
 
 /**
- * Created by iurii.dziuban on 01.09.2016.
  *
+ * Created by iurii.dziuban on 01.09.2016.
  */
-open class Dollar(var cents: Int = 0) {
+open class Dollar(var cents: Int = 0) : Comparable<Dollar> {
 
-    private val LOGGER = LoggerFactory.getLogger(Dollar::class.java)
+    val LOGGER = LoggerFactory.getLogger(Dollar::class.java)
 
     val oneDollar: Dollar by lazy {
-        // why explicitly call toString ?
-        LOGGER.info(Dollar(100).toString())
+        LOGGER.info("" + Dollar(100))
         Dollar(100)
     }
 
@@ -70,4 +69,12 @@ open class Dollar(var cents: Int = 0) {
             lock.unlock()
         }
     }
+
+    override fun compareTo(other: Dollar): Int {
+        return cents - other.cents;
+    }
+
+    operator fun rangeTo(other: Dollar): DollarRange = DollarRange(this, other);
+
+    infix fun downTo(other: Dollar): DollarProgression = DollarProgression.fromClosedRange(this, other, -1);
 }
