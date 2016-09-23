@@ -1,6 +1,8 @@
 package org.kotlin.examples
 
 import org.junit.Test
+import org.kotlin.examples.delegation.BaseImpl
+import org.kotlin.examples.delegation.Delegation
 import kotlin.test.assertEquals
 
 /**
