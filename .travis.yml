@@ -12,12 +12,3 @@ env:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    #   via the "travis encrypt" command using the project repo's public key
     - secure: "VsJ8Tuk7plyIxWACjb3dTo4WYrGZfKV4/8NZspD6psSHjCBDBeHw6gbw23SJfNQGjOnYoeuZdwT4sSz023auuHIoST4yD2nDIqo9cBS5Bn+cjD00khKqV5hxHun1gVYoSqA8G1TusSpBXPvGX1ODASDgkp4GkqqC6yU5N+LIskvzcKQE1eIxpz6emdhcO9FSxUIETiSRtKj8QZzCRxznW+Tcvn9gz/cgKT7nyvUbr29Ie+ob2ava/++EA8QeG9HbSecuVYbgs7zS/MnWkPPR08do57cLReXsmLHHRj0g538CPdADHSU6IdsZzDKGkPRYu4uYiC86+Jm+uCQmLUgaUAuaW2hfPC5cTmbJ83YZinGcs4WMoCwyhO3bXbhJsUn5QKQwDrHzjZ8D5gYnoZXxxiATOr2U33+hBYiBVHnaFg0U5pz+gMsvFtzZlu0dW+mWVSfB+nOUEXONCdm0jDpgt9mOsOx/DJNJqRzO6lO6XCZpE71neOqvMi9tD1zhED8RBRDCtfSs25BI1fnXl9UflX/O+xHQIWizBmgntH/vZqIJf47eng/WA8JMCRcE6KVqiN1M9EuMcZqY+PbcJ22kPlv2LzDb4yGv6VHW62qNU4n/tHsfXj8+DB1MY7lWG1akyfVsS7PFY3rClAS+O+yP3opECQpTvhD3Kv2H56JdDxE="
-addons:
-  coverity_scan:
-    project:
-      name: "Iurii-Dziuban/kotlin-examples"
-      description: "Build submitted via Travis CI"
-    notification_email: ydzyuban@gmail.com
-    build_command_prepend: "mvn clean"
-    build_command:   "mvn clean package"
-    branch_pattern: master
