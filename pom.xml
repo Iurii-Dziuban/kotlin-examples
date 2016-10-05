@@ -124,26 +124,6 @@
             </plugin>
 
             <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.7.201606060606</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>2.7</version>
@@ -152,6 +132,16 @@
                     <maxmem>256m</maxmem>
                     <!-- aggregated reports for multi-module projects -->
                     <aggregate>true</aggregate>
+                    <instrumentation>
+                        <ignores>
+                            <ignore>org.kotlin.examples.VarArgExample</ignore>
+                            <ignore>org.kotlin.examples.observable.ObservableValue</ignore>
+                        </ignores>
+                        <excludes>
+                            <exclude>**/VarArgExample.class</exclude>
+                            <exclude>**/observable/**</exclude>
+                        </excludes>
+                    </instrumentation>
                 </configuration>
             </plugin>
 
@@ -169,6 +159,12 @@
                 <groupId>org.eluder.coveralls</groupId>
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>4.3.0</version>
+                <configuration>
+                    <repoToken>
+                        TxkTT8KBP4cqt9tCJRvbdO7LsG6PTc7Jf
+                    </repoToken>
+                    <scanForSources>false</scanForSources>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.versioneye</groupId>

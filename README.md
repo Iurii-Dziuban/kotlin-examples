@@ -24,6 +24,9 @@ Libraries:
 # Logging
 Standard output is used
 
+# Coverage
+Coveralls and Cobertura are not good with generated code, so Delegates example with `ObservableValue` and `VarArgExample` were excluded from coverage.
+
 # Kotlin features
 - `TopLevelFunction` function as first class citizen
 - `ExtSimpleService` example of adding functionality (method) into existing class (problems can occur with separate compilation)
