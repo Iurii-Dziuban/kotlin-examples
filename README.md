@@ -35,18 +35,19 @@ Coveralls and Cobertura are not good with generated code, so Delegates example w
 - `WhenExample` potentially more powerful instrument than java switch statement
 - `Transaction` kotlin data POJO example. `data` notation generates equals and hashcode, costructor generation, `val` - readonly properties,  so only getters will be generated
    destructing and equality declaration example
-- `Dollar` shows operator overrides.
- * Operator overloading
- * Equals and hashcode override_operators
- * Try/catch expression values
- * Copy value
- * Referential and structural equals
- * Destructuring object
- * Inlining by locking example // coverage tool does not cover inline functions
- * Infix function
- * Null check do
- * Closure
- * Dollar Range implementation
+- `Dollar` shows 
+     * Operator overrides.
+     * Operator overloading
+     * Equals and hashcode override_operators
+     * Try/catch expression values
+     * Copy value
+     * Referential and structural equals
+     * Destructuring object
+     * Inlining by locking example // coverage tool does not cover inline functions
+     * Infix function
+     * Null check do
+     * Closure
+     * Dollar Range implementation
 - `DollarProgression` progression implementation with internal visibility modifier to be visible inside module
 - `VarArgExample` shows vararg parameters example
 - `Delegation` example of Delegation pattern alternative to Inheritance
