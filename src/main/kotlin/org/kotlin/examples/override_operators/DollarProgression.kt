@@ -36,7 +36,7 @@ open class DollarProgression
 
 
     infix fun step(step: Int): DollarProgression {
-        if (step <= 0) throw IllegalArgumentException("Step must be positive, was: $step")
+        if (step == 0) throw IllegalArgumentException("Step must be positive, was: $step")
         return Companion.fromClosedRange(first, last, if (step > 0) step else -step)
     }
 

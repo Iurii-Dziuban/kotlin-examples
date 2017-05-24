@@ -18,10 +18,19 @@ class DollarProgressionTest {
     }
 
     @Test
+    fun stepIsNotZero() {
+        DollarProgression(Dollar(1), Dollar(4), 1).step(2)
+        DollarProgression(Dollar(4), Dollar(1), -1).step(-2)
+
+    }
+
+    @Test
     fun isEmpty() {
         assertTrue(DollarProgression(Dollar(1),Dollar(3),-1).isEmpty())
-        assertTrue(DollarProgression(Dollar(3),Dollar(1),1).isEmpty())
-        assertFalse(DollarProgression(Dollar(1),Dollar(2),1).isEmpty())
+        assertFalse(DollarProgression(Dollar(1),Dollar(3),1).isEmpty())
+
+        assertFalse(DollarProgression(Dollar(3),Dollar(1),-1).isEmpty())
+        assertTrue(DollarProgression(Dollar(3),Dollar(1), 1).isEmpty())
     }
 
     @Test
@@ -32,13 +41,14 @@ class DollarProgressionTest {
 
     @Test
     fun testToString() {
-        assertEquals(DollarProgression(Dollar(1),Dollar(3),1).toString(), "$0.01..$0.03 step 1")
-        assertEquals(DollarProgression(Dollar(3),Dollar(1),2).toString(), "$0.03..$0.01 step 2")
+        assertEquals("$0.01..$0.03 step 1", DollarProgression(Dollar(1),Dollar(3),1).toString())
+        assertEquals("$0.03..$0.01 step 2", DollarProgression(Dollar(3),Dollar(1),2).toString())
     }
 
     @Test
     fun hashcode() {
-        assertEquals(DollarProgression(Dollar(1),Dollar(3),1).hashCode(), 1055)
+        assertEquals(1055, DollarProgression(Dollar(1),Dollar(3),1).hashCode())
+        assertEquals(-1, DollarProgression(Dollar(1),Dollar(2),-1).hashCode())
     }
 
 }

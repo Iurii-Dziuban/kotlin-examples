@@ -126,10 +126,10 @@ class DollarTest {
             to.add(i)
 
         assertEquals(to.size, 4);
-        assertEquals(to.contains(Dollar(1)), true);
-        assertEquals(to.contains(Dollar(2)), true);
-        assertEquals(to.contains(Dollar(3)), true);
-        assertEquals(to.contains(Dollar(4)), true);
+        assertTrue(to.contains(Dollar(1)));
+        assertTrue(to.contains(Dollar(2)));
+        assertTrue(to.contains(Dollar(3)));
+        assertTrue(to.contains(Dollar(4)));
     }
 
     @Test
@@ -140,10 +140,10 @@ class DollarTest {
             downTo.add(i)
 
         assertEquals(downTo.size, 4);
-        assertEquals(downTo.contains(Dollar(1)), true);
-        assertEquals(downTo.contains(Dollar(2)), true);
-        assertEquals(downTo.contains(Dollar(3)), true);
-        assertEquals(downTo.contains(Dollar(4)), true);
+        assertTrue(downTo.contains(Dollar(1)));
+        assertTrue(downTo.contains(Dollar(2)));
+        assertTrue(downTo.contains(Dollar(3)));
+        assertTrue(downTo.contains(Dollar(4)));
     }
 
     @Test
@@ -152,8 +152,8 @@ class DollarTest {
         for (i in Dollar(1)..Dollar(4) step 2)
             step.add(i)
 
-        assertEquals(step.size, 2);
-        assertEquals(step.contains(Dollar(1)), true);
-        assertEquals(step.contains(Dollar(3)), true);
+        assertEquals(2, step.size);
+        assertTrue(step.contains(Dollar(1)));
+        assertTrue(step.contains(Dollar(3)));
     }
 }

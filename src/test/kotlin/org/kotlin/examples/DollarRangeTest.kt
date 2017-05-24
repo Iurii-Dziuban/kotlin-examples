@@ -16,8 +16,8 @@ class DollarRangeTest {
     fun test() {
         assertFalse(DollarRange(Dollar(1), Dollar(4)).isEmpty())
         assertTrue(DollarRange(Dollar(2), Dollar(1)).isEmpty())
-        assertEquals(DollarRange(Dollar(1), Dollar(4)).start, Dollar(1))
-        assertEquals(DollarRange(Dollar(1), Dollar(4)).endInclusive, Dollar(4))
+        assertEquals(Dollar(1), DollarRange(Dollar(1), Dollar(4)).start)
+        assertEquals(Dollar(4), DollarRange(Dollar(1), Dollar(4)).endInclusive)
     }
 
 }
