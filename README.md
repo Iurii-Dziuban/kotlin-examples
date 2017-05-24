@@ -8,6 +8,10 @@
 
 A project that shows Kotlin language features that differ from java (https://kotlinlang.org/)
 
+# Checks
+
+Jacoco code coverage, pmd, checkstyle, enforcer, findbugs
+
 # Project structure
 Each sub project follows the structure
 Maven project that consists of the following parts:
