@@ -35,7 +35,7 @@
         <kotlin.version>1.1.2-4</kotlin.version>
         <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
-        <spring.version>4.3.8.RELEASE</spring.version>
+        <spring.version>4.3.9.RELEASE</spring.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <jacoco.ratio.instruction>0.50</jacoco.ratio.instruction>
         <jacoco.ratio.bundle>0.50</jacoco.ratio.bundle>
@@ -182,7 +182,7 @@
             <plugin>
                 <groupId>com.versioneye</groupId>
                 <artifactId>versioneye-maven-plugin</artifactId>
-                <version>3.11.2</version>
+                <version>3.11.4</version>
             </plugin>
 
             <plugin>
@@ -237,7 +237,7 @@
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
                         <artifactId>checkstyle</artifactId>
-                        <version>7.7</version>
+                        <version>7.8.2</version>
                     </dependency>
                     <dependency>
                         <groupId>com.github.sevntu.checkstyle</groupId>
