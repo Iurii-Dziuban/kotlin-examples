@@ -8,6 +8,15 @@
 
 A project that shows Kotlin language features that differ from java (https://kotlinlang.org/)
 
+## Table of contents:
+ * [Static Analysis QA Checks](#checks)
+ * [Project structure](#project-structure)
+ * [Building project](#building-project)
+ * [Libraries](#pomxml)
+ * [Logging configuration](#logging)
+ * [Code coverage](#coverage)
+ * [Kotlin features](#kotlin-features)
+ 
 # Checks
 
 Jacoco code coverage, pmd, checkstyle, enforcer, findbugs
