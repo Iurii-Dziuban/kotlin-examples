@@ -130,7 +130,6 @@
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version>
                 <configuration>
                     <argLine>${argLine}</argLine>
                 </configuration>
@@ -212,7 +211,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.4</version>
                 <executions>
                     <execution>
                         <id>findbugs</id>
