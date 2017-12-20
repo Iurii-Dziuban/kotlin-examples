@@ -16,16 +16,16 @@ A project that shows Kotlin language features that differ from java (https://kot
  * [Logging configuration](#logging)
  * [Code coverage](#coverage)
  * [Kotlin features](#kotlin-features)
- 
+ * [Ideas to try](#ideas)
 # Checks
 
-Jacoco code coverage, pmd, checkstyle, enforcer, findbugs
+`Jacoco`/`cobertura` code coverage, `pmd`, `checkstyle`, `enforcer`, `findbugs`
 
 # Project structure
 Each sub project follows the structure
 Maven project that consists of the following parts:
 - Kotlin main classes are under (`src/main/kotlin`) with different classes with kotlin features.
-- Test extentions for executing tests (`src/test/kotlin`) that show kotlin features and run during the build
+- Test extensions for executing tests (`src/test/kotlin`) that show kotlin features and run during the build
 
 # Building project
 `mvn clean package`
@@ -70,3 +70,7 @@ Coveralls and Cobertura are not good with generated code, so Delegates example w
 - `SpringExampleTest` integration with spring framework
 - `ObservableTest` observable feature example (kind of value changed listener)
 - `Mapping` mapping from Map to class fields example
+
+# Ideas
+- From reference https://kotlinlang.org/docs/reference/
+- Kotlin conf 2017 https://www.youtube.com/playlist?list=PLQ176FUIyIUY6UK1cgVsbdPYA3X5WLam5
