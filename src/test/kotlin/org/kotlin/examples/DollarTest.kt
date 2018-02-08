@@ -3,10 +3,7 @@ package org.kotlin.examples
 import org.junit.Test
 import org.kotlin.examples.override_operators.Dollar
 import org.slf4j.LoggerFactory
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
-import kotlin.test.fail
+import kotlin.test.*
 
 /**
  * Created by iurii.dziuban on 01.09.2016.
@@ -101,17 +98,29 @@ class DollarTest {
         assertEquals(Dollar(100), dollarProperty.oneDollar)
     }
 
-    @Test
-    fun nullCheckAndStringTemplate() {
-        val dollar = Dollar(50);
+    @Test(expected = AssertionError::class)
+    fun nullAndStringTemplate() {
+        val dollar = null;
         dollar?.let {
+            LOGGER.info("Dollar is not null")
+            // not working for properties...
+            LOGGER.info("Dollar is not null and $dollar.cents")
+            assertNull(dollar)
+            return
+        }
+        fail("dollar should not be null")
+    }
+
+    @Test
+    fun nonNullAndStringTemplate() {
+        val dollar = Dollar(50);
+        dollar.let {
             LOGGER.info("Dollar is not null and " + dollar.cents)
             // not working for properties...
             LOGGER.info("Dollar is not null and $dollar.cents")
             assertEquals(Dollar(50), dollar)
             return
         }
-        fail("dollar should not be null")
     }
 
     @Test

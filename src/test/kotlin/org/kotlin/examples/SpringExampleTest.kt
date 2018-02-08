@@ -13,14 +13,14 @@ import kotlin.test.assertEquals
  * Simple kotlin spring integration example
  */
 @RunWith(SpringJUnit4ClassRunner::class)
-@ContextConfiguration(locations = arrayOf("classpath:application-context.xml"))
+@ContextConfiguration(locations = ["classpath:application-context.xml"])
 class SpringExampleTest {
 
     @Autowired
     lateinit var transaction : Transaction
 
     @Test
-    fun test() {
+    fun `basic test`() {
         assertEquals(2, transaction.id)
         assertEquals("Iurii", transaction.name)
     }

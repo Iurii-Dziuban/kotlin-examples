@@ -70,6 +70,7 @@ Coveralls and Cobertura are not good with generated code, so Delegates example w
 - `SpringExampleTest` integration with spring framework
 - `ObservableTest` observable feature example (kind of value changed listener)
 - `Mapping` mapping from Map to class fields example
+- `DeprecatedTest` example of kotlin deprecation and tooling of Intellij idea for deprecation
 
 # Ideas
 - From reference https://kotlinlang.org/docs/reference/
