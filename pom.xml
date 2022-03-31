@@ -36,7 +36,7 @@
         <kotlin.version>1.2.50</kotlin.version>
         <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
-        <spring.version>5.0.7.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
         <jacoco.ratio.instruction>0.87</jacoco.ratio.instruction>
         <jacoco.ratio.bundle>0.72</jacoco.ratio.bundle>
